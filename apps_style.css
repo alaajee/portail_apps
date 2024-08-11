@@ -1,0 +1,329 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between header elements */
+    align-items: center;
+    background-color: #e1e7e1;
+    padding: 10px 20px; /* Add padding for space inside the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-bottom: 4px solid #6e9ebc; /* Add a bottom border for emphasis */
+}
+
+.header-container {
+    flex: 1;
+    text-align: center; /* Center-align text within each container */
+}
+
+.header-left,
+.header-right {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333; /* Darken the text color */
+    text-transform: uppercase; /* Capitalize text for impact */
+    letter-spacing: 2px; /* Space out letters slightly */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-left:hover,
+.header-right:hover {
+    color: #6ba9ae; /* Change text color on hover */
+}
+
+
+
+.header-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+
+.header-image {
+    height: 150px;
+    margin-right: 70px; /* Espacement horizontal autour de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.header-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.gauche {
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 210px;
+}
+.droite {
+    width: 50%;
+    height: 210px;
+}
+
+
+.about_us {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(96, 132, 132);
+    font-size: 24px;
+}
+
+.min {
+    display: inline-block;
+    position: relative;
+    cursor: auto;
+    padding-top: 10px;
+    padding-left: 350px;
+}
+
+.clique {
+    display: none; /* Masque le bloc par défaut */
+    position: absolute;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 300px;
+    height: 400px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-bottom: 2px solid rgb(96, 132, 132);
+    top: 100%; /* Position the block below the .min element */
+    z-index: 1; /* Assure que le bloc est au-dessus d'autres éléments */
+}
+
+.min:hover .clique,
+.clique:hover {
+    display: block; /* Affiche le bloc lors du survol */
+}
+
+.min:hover {
+    text-decoration: underline;
+}
+
+.mot:hover {
+    text-decoration: underline;
+}
+
+.mot {
+    margin: 0;
+    padding: 0;
+    color: #000; /* Couleur du texte du lien */
+    text-decoration: none; /* Pas de soulignement du lien */
+}
+
+
+@media (max-width: 767px) {
+    header {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto; /* Hauteur automatique pour petits écrans */
+    }
+    .header-image {
+        max-width: 210px;
+    }
+    .droite {
+       
+            width: 40%;
+            height: 150px;
+        
+    }
+    .gauche{
+        width: 40%;
+        display: flex;
+        height: 150px;
+    }
+    .min{
+        padding-left: 50px;
+    }
+}
+
+a {
+    text-decoration:  none;
+    color: black;
+  }
+
+.mot1:hover{
+    text-decoration: underline;
+}
+.mot1{
+    padding-top: 10px;
+}
+.Pourquoi{
+    display: inline-block;
+    position: relative;
+    cursor: auto;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+.Pourquoi:hover{
+    text-decoration: underline;
+}
+.Contact{
+    display: inline-block;
+    position: relative;
+    cursor: auto;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+.Contact:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordures arrondies */
+    text-align: center;
+    margin: 20px;
+}
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* Alignement du bouton à droite */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Vert foncé au survol */
+}
+.debut {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(96, 132, 132);
+    padding: 0px;
+    font-size: 24px;
+}
+.couleur{
+    background-color:rgb(96, 132, 132) ;
+}
+.footer {
+    background-color: #0e0d0d; /* Couleur de fond noire */
+    color: #080808; /* Couleur du texte blanche */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Pour pousser le footer en bas de la page */
+    height: 100px;
+    
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.social-icon {
+    color: #efebeb; /* Couleur des icônes */
+    font-size: 24px; /* Taille des icônes */
+    margin: 0 10px; /* Espacement entre les icônes */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    
+}
+
+.social-icon:hover {
+    color: #ddd; /* Couleur des icônes au survol */
+}
+.para{
+    padding: 0;
+    color:white ;
+    display: flex;
+    justify-content: flex-start;
+}
+.image-container {
+    display: block;
+    height: 400px; /* hauteur du bloc */
+    border: 2px solid #f0ecec; /* bordure pour mieux voir le bloc */
+    align-items: center; /* centrer l'image verticalement */
+    background-color: #ece6e6;
+    margin: 50px;
+    border-radius: 5%;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.image-container img {
+    max-width: 100%; /* ajuster la taille de l'image */
+   
+}
+.descr {
+    margin-top: 10px; /* espace entre l'image et le texte */
+}
+.btn1 {
+    background-color: #768076; /* Vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Bordures arrondies */
+    text-align: center;
+    margin: 20px;
+}
+
+
+.btn1:hover {
+    background-color: #788278; /* Vert foncé au survol */
+}
+.flex-section {
+    display: flex;
+    justify-content: space-around; /* espace autour des blocs */
+    gap: 20px; /* espace entre les blocs */
+}
+.haouz {
+    height: 200px;
+}
+.a{
+    display: block;
+    background-color: #e1e7e1;
+    width: 500px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+.images{
+    height: 200px;
+}
+.fos{
+    height: 200px;
+}
+.onicl{
+    height: 150px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}

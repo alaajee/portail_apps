@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter Infos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Remplissez le formulaire suivant :</h1>
+    <form id="infoForm">
+        <div class="form-group">
+            <label for="appName">Nom de l'application:</label>
+            <input type="text" id="appName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="appDescription">Description de l'application:</label>
+            <textarea id="appDescription" name="appDescription" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="appLink">Lien de l'application:</label>
+            <input type="url" id="appLink" required>
+        </div>
+
+        <div class="form-group">
+            <label for="appImage">Choisissez un logo  :</label>
+            <input type="file" id="appImage" accept="image/*">
+            <br><br>
+        </div> 
+        <button type="submit" id="addButton">Ok</button>
+    </form>
+</body>
+</html>
